@@ -1,0 +1,290 @@
+.instaSearchDiv{
+    text-align: center;
+    .icon-search{
+        display:inline-block;
+        color: $sideBarFont-color;
+        margin-right: 3%;
+    }
+    .searchBox{
+        margin-top: 20%;
+    }
+}
+
+/* Removes the clear button from date inputs */
+input[type="date"]::-webkit-clear-button {
+    display: none;
+}
+
+/* Removes the spin button */
+input[type="date"]::-webkit-inner-spin-button { 
+    display: none;
+}
+
+@keyframes loadingBarAnimated{
+    0% {transform: translateX(-50%) rotate(0deg);}
+    100% {transform: translateX(-50%) rotate(360deg);}
+}
+
+.contentContainer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    .sideBar{
+        height: 100%;
+        width: 300px;
+        transition: transform $menuSwipeTime ease-out;
+        transform: translateX(0);
+        float:left;
+        left: -280px;
+        transition: opacity 0.1s ease-out;
+        opacity: 0;
+        overflow: auto;
+        position: absolute;
+        z-index: 3;
+        @media(min-width: $breakpoint-mobile){
+            width: $menu-width;
+            position: relative;
+            opacity: 1;
+            left: 0;
+        }
+        margin: 0;
+        background-color: $sideBar-color;
+        &.viaBtn{
+            transition: left $menuSwipeTime ease-out;
+        }
+        .logoContainer{
+            background-color: #293949;
+            p{
+                text-align: center;
+                color: white;
+                font-size: 40px;    
+                padding-top: 5%;
+                font-weight: bold;  
+                cursor: pointer;
+            }
+        }
+        .sideBarHeadline{
+            color: $sideBarFont-color;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+        .swipeContainer{
+            background-color: $sideBar-color;
+            border: 1px solid black;
+            opacity: 0.1;
+            height: 100%;
+            width: 20px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            @media(min-width: $breakpoint-mobile){
+                display: none;
+            }
+        }
+    }
+    .mainContentContainer{
+        .roundButton{
+            position: fixed;
+            width: 50px;
+            height: 50px;
+            transition: background-color 0.1s ease-out;
+            background-color: $sideBar-color;
+            border-radius: 50px;
+            bottom: 5%;
+            right: 1%;
+            z-index: 4;
+            -webkit-box-shadow: 10px 10px 21px -13px rgba(0,0,0,0.7);
+            -moz-box-shadow: 10px 10px 21px -13px rgba(0,0,0,0.7);
+            box-shadow: 10px 10px 21px -13px rgba(0,0,0,0.7);
+            text-align: center;
+            &:hover{
+                transition: background-color 0.1s ease-out;
+                background-color: $sideBarFont-color;
+                cursor: pointer;
+            }
+            span{
+                color: white;
+                text-align: center;
+                font-size: 35px;
+                line-height: 50px;
+            }
+        }
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        @media(min-width: $breakpoint-mobile){
+            width: calc(100% - #{$menu-width});
+            position: relative;
+        }
+        .loadingBar{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 50%;
+            z-index: 3;
+            width: 70px;
+            height: 70px;
+            animation-name: loadingBarAnimated;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            border: 20px solid $sideBar-color;
+            border-radius: 35px;
+        }
+        .headerBar{
+            display: block;
+            width: 100%;
+            background-color: $headerBar-color;
+            span{ color: #85909D; }
+            position: relative;
+            .userMenu {
+                position: absolute;
+                width: 180px;
+                max-height: 0px;
+                height: auto;
+                background: white;
+                z-index:10;
+                box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+                transition: max-height .2s ease-in-out;
+                overflow: hidden;
+                ul {
+                    list-style:none;
+                    li {
+                        text-align:center;
+                        padding: 10px;
+                        &:hover { background-color: $headerBarBorder-color; cursor: pointer;  color: darken($headerBarFont-color,4.2); }
+                    }
+                }
+            }
+            .icon-menu{
+                font-size: 22px;
+                position: absolute;
+                top: 12px;
+                left: 5px;
+                z-index: 3;
+                transition: transform $menuSwipeTime ease-out;
+                @media(min-width: $breakpoint-mobile){
+                    display:none;
+                }
+                &:hover{
+                    cursor: pointer;              
+                }
+            }
+            .headerBtn{
+                color: $headerBarFont-color;
+                text-align: center;
+                line-height: 50px;
+                font-size: 20px;
+                padding-left: 8px;
+                padding-right: 8px;
+                @media(min-width: $breakpoint-mobile){
+                    line-height: 80px;
+                    font-size: 28px;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }
+                display: inline-block;
+                &.mleft{
+                    @media(max-width: $breakpoint-mobile){
+                        margin-left: 30px;
+                    }
+                }
+                &:hover{ background-color: $headerBarBorder-color; cursor: pointer;  color: darken($headerBarFont-color,4.2); }
+                &#fbLoginBtn { float:right; }
+                &#userProfile { 
+                    display: none;
+                    width: 50px;
+                    @media(min-width: $breakpoint-mobile){
+                        width: 105px;
+                    }
+                    float: right;
+                    padding: 0;
+                    cursor: default;
+
+                    .userImg {
+                        display:none;
+                        @media(min-width: $breakpoint-mobile){
+                            display: block;
+                            height:60px;
+                            width: 60px;
+                            margin-top:10px;
+                        }
+                        border-radius: 50%;
+                        background: grey;
+                        float: left;
+                    }
+                    .userBtn {
+                        height: 15px;
+                        width: 15px;
+                        border-bottom: 2px solid #333;
+                        border-right: 2px solid #333;
+                        transform: rotate(45deg);
+                        cursor: pointer;       
+                        border-color: $sideBar-color;            
+                        &:hover{
+                            border-color: $sideBarFont-color;
+                        }
+                    }
+                }
+                div { display:inline-block; }
+            }
+            
+        }
+        .mainContent{
+            display: inline-block;
+            height: 90%;
+            width: 100%;
+            overflow-y: auto;
+            background-color: $mainContent-color;
+            -webkit-box-shadow: inset 0px 9px 121px -53px rgba(0,0,0,0.75);
+            -moz-box-shadow: inset 0px 9px 121px -53px rgba(0,0,0,0.75);
+            box-shadow: inset 0px 9px 121px -53px rgba(0,0,0,0.75);
+        }
+    }
+}
+
+.categorieContainer{
+    .categoryTag{
+        display: inline-block;
+        color: $headerBarFont-color;
+        background: darken($sideBar-color,1.5);
+        margin: 5px;
+        padding: 5px;
+        user-select: none;
+        @media(min-width: $breakpoint-mobile){
+            &:hover{
+                transition: background-color 0.1s ease-out, color 0.1s ease-out;
+                cursor: pointer;
+                background-color: $sideBarFont-color;                     
+                color: white;
+            }
+        }
+        &.selected{
+            background-color: $sideBarFont-color;
+            color: white;
+            @media(min-width: $breakpoint-mobile){
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+.clearfix:after {
+    content:".";
+    display:block;
+    height:0;
+    font-size:0;
+    clear:both;
+    visibility:hidden;
+}
+ 
+.clearfix {display:inline-block;}
+ 
+/* Hides from IE-mac \*/
+* html .clearfix {height:1%;}
+.clearfix {display:block;}
+/* End hide from IE-mac */

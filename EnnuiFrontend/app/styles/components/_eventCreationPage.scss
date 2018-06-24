@@ -1,0 +1,154 @@
+.eventCreationContainer{
+    height: 100%;
+    width: 100%;
+    background-color: $mainContent-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: fadeIn 0.2s ease-in-out forwards;
+    overflow-y: scroll;
+    &.fadeOutt{
+        animation: fadeOutT 0.2s ease-in-out forwards;
+    }
+    .finishButton{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        color: white;
+        background-color: $sideBar-color;
+        text-align: center;
+        bottom: 5%;
+        right: 1%;
+        span{
+            font-size: 24px;
+            line-height: 50px;
+        }
+        &:hover{
+            background-color: $sideBarFont-color;
+            cursor: pointer;
+        }
+    }
+    .eventCreationHeaderContainer {
+        position: relative;
+        height: 40%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        box-shadow: inset 0px 0px 5px 200px rgba(0,0,0,0.75);
+        color: white;
+        &:hover{
+            cursor: pointer;
+            box-shadow: inset 0px 0px 5px 200px rgba(0,0,0,0.72);
+        }
+        .icon-back {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            opacity: .8;
+            &:hover {
+                opacity: 1;
+            }
+        }
+        .headerContent {
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            @media(max-width: $breakpoint-mobile){
+                font-size: 10px;
+            }
+            transform: translate(-50%, -50%);
+            font-family: lato;
+            text-align: center;
+            #eventCreationEndTime,#eventCreationStartTime,#eventCreationEndTimeTime,#eventCreationStartTimeTime{
+                font-size: 20px;
+                text-align: center;
+                margin-left: 50px;
+            }
+            #eventCreationName{
+                font-size: 30px;
+                width: 100%;
+                text-align: center;
+            }
+            #eventCreationWebsite{
+                font-size: 16px;
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+            input{
+                color: white;
+            }
+        }
+    }
+    .eventCreationDescription {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+        outline: none;
+        background-color: transparent;
+        border:none;
+        @media(min-width: $breakpoint-mobile){
+            float: left;
+            width: calc(60% - 120px);
+            max-width: calc(100% - 600px);
+            margin: 60px;
+        }
+    }
+    .rightColumn {
+        @media(min-width: $breakpoint-mobile){
+            width: calc(40% - 120px);
+            margin-right: 60px;
+            min-width: 400px;
+            float: right;
+        }
+        .mapWrapper {
+            margin-top: 30px;
+            input {
+               font-size: 1.1em; 
+            }
+            .mapCreationLocation {
+                width: calc( 100% - 16px);
+                background: white;
+                padding: 8px;
+                border: 1px solid lightgray;
+                border-bottom: none;
+                .mapLocationHeader { font-weight: bold; }
+            }
+            .eventCreationLocationMap {
+                width:100%;
+                height: 350px;
+                border: 1px solid lightgray;
+            }
+        }
+    }
+    input{
+        background-color: transparent;
+        border:none;
+        outline: none;
+        text-decoration: underline;
+    }
+}
+
+.controls {
+    margin-top: 10px;
+    border: 1px solid transparent;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 32px;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#pac-input {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+}

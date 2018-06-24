@@ -1,0 +1,25 @@
+// VARIABLES
+@import 'variables';
+
+// FONTS
+@import 'fonts';
+
+// UTIL
+@import 'util/**';
+
+// BASE
+@import 'base/**';
+
+// COMPONENTS
+@import 'components/**';
+
+// STATES
+@import 'states/**';
+
+* { padding: 0px; margin: 0px; }
+html,body{
+    height: 100%;
+    width: 100%;
+    -webkit-touch-callout: none; /* iOS Safari */
+    font-family: 'Roboto';
+}

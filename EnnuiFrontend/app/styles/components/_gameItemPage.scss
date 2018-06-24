@@ -1,0 +1,94 @@
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1.0;
+    }
+}
+
+@keyframes fadeOutT{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }  
+}
+
+.gameItemPageContainer{
+    height: 100%;
+    width: 100%;
+    background-color: $mainContent-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: fadeIn 0.2s ease-in-out forwards;
+    overflow-y: auto;
+    &.fadeOutt{
+        animation: fadeOutT 0.2s ease-in-out forwards;
+    }
+    
+    .icon-back{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-size: 24px;
+        z-index: 3;
+        &:hover{
+            cursor: pointer;
+            color: $sideBarFont-color;
+        }
+    }
+    .header {
+        position: relative;
+        height: 40%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        box-shadow: inset 0px 0px 5px 200px rgba(0,0,0,0.75);
+        color: white;
+
+        .headerText {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            @media(max-width: $breakpoint-mobile){
+                font-size: 10px;
+            }
+            transform: translate(-50%, -50%);
+            font-family: lato;
+            text-align: center;
+        }
+    }
+    .tabMenu {
+        width: 100%;
+        box-shadow: 0px 9px 121px -53px rgba(0, 0, 0, 0.75);
+        .tab {
+            display: inline-block;
+            width: 50%;
+            text-align: center;
+            padding: 20px 0;
+            color: $headerBarFont-color;
+            background: $headerBar-color;
+            transition: background-color 0.1s ease-out;
+             &:hover{
+                cursor: pointer;
+                background-color: darken($headerBarBorder-color, 4.2);
+            }
+            &.active {
+                background-color: darken($headerBarBorder-color, 4.2);
+            }
+        }
+    }
+    .tabContent {
+        width: calc(100% - 16px);
+        box-shadow: inset 0px 9px 121px -53px rgba(0, 0, 0, 0.75);
+        display: none;
+        height: calc(60% - 75px);
+        padding: 8px;
+        &.active {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,138 @@
+#gamePageMain{
+    height: 100%;
+    width: 100%;
+}
+
+#gamePageContent{
+    text-align: center;
+}
+
+.gameItem{
+    display: inline-block;
+    width:$eventItem-width;
+    vertical-align: middle;
+    margin: 2%;
+    height: $eventItem-height;
+    border-radius: 3px;
+    text-align: center;
+    background-color: white;
+    -webkit-box-shadow: 0px 5px 55px -24px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 55px -24px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 55px -24px rgba(0,0,0,0.75);
+    position: relative;
+    .gameImage{
+        height: 60%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transition: box-shadow 0.3s ease-out;                            
+        -webkit-box-shadow: inset 0px 0px 5px 200px rgba(41,57,73,0);
+        -moz-box-shadow: inset 0px 0px 5px 200px rgba(41,57,73,0);
+        box-shadow: inset 0px 0px 5px 200px rgba(41,57,73,0);
+        overflow:hidden;
+        position: relative;
+        &:hover{
+            transition: box-shadow 0.3s ease-out;
+            -webkit-box-shadow: inset 0px 0px 5px 200px rgba(41,57,73,0.75);
+            -moz-box-shadow: inset 0px 0px 5px 200px rgba(41,57,73,0.75);
+            box-shadow: inset 0px 0px 5px 200px rgba(41,57,73,0.75);
+            cursor: pointer;
+            .descContainer{
+                opacity: 1;
+            }
+        }
+        .descContainer{
+            width: 100%;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+            color: white;
+            transition: opacity 0.3s ease-out;
+            font-weight: bold;
+            opacity: 0;
+        }
+    }
+    .textContainer{
+        margin: 1%;
+        margin-top: 5%;
+        h1{
+            font-size: 18px;
+            color:#3B4C5F;
+        }
+    }
+    .green{
+        color: green;
+        font-weight: bold;
+    }
+    .red{
+        color: red;
+        font-weight: bold;
+    }
+    .icon-heart{
+        position: absolute;
+        left: 15px;
+        bottom: 15px;
+        color: $sideBar-color;
+        transition: color 0.2s;
+        &:hover{
+            transition: color 0.2s;
+            color: red;
+            cursor: pointer;
+        }
+        &.favored{
+            color: red;
+        }
+    }
+    .rating{
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        font-size: 20px;
+        unicode-bidi: bidi-override;
+        direction: rtl;
+        span{
+            display:inline-block;
+            position: relative;
+            width: 1.1em;
+            &.selected:before{
+                content: "\2605";
+                color: $sideBarFont-color;
+                position: absolute;
+            }
+            &.allRating:before{
+                content: "\2605";
+                color: $sideBar-color;
+                position: absolute;
+            }
+        }
+    }
+    .rating > span:hover:before,
+    .rating > span:hover ~ span:before {
+        content: "\2605";
+        color: gold;
+        position: absolute;
+        cursor: pointer;
+    }
+    .deleteGameBtn {
+        display: block;
+        position: absolute;
+        z-index: 3;
+        top: 5px;
+        right: 5px;
+        font-weight: bold;
+        font-size: 12px;
+        &:hover {
+            color: grey;
+            cursor: pointer;
+        }
+        &.hidden {
+            display: none;
+        }
+    }
+    &.hidden {
+        display: none;
+    }
+}

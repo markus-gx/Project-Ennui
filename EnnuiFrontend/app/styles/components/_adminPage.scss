@@ -1,0 +1,42 @@
+#adminPageMain{
+    .popup{
+        color: white;
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        top: 0;
+        width: 400px;
+        overflow: auto;
+        word-wrap: break-word;
+        height: 600px;
+        background-color: rgba(black,0.7);
+    }
+    .itemDiv{
+        display: inline-block;
+        margin: 50px;
+        background-color: $sideBar-color;
+        padding: 50px;
+        h1{
+            &:hover{
+                background-color: $sideBarFont-color;
+                cursor: pointer;
+            }
+        }
+        text-align: center;
+        .accept{
+            background-color: green;
+            &:hover{
+                background-color: darkgreen;
+            }
+        }
+        .delete{
+            background-color: red;
+            &:hover{
+                background-color: darkred;
+            }
+        }
+    }
+}

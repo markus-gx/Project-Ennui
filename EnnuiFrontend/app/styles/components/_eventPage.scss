@@ -1,0 +1,247 @@
+.searchBox{
+    width: 80%;
+    display: inline-block;
+    margin: auto;
+    height: 25px;
+    color: $headerBarFont-color;
+    background-color: transparent;
+    font-size: 16px;
+    border: none;
+    font-weight: bold;
+    outline: none;
+}
+.searchBox::-webkit-input-placeholder {
+    color: $headerBarFont-color; 
+}
+
+.searchBox:-moz-placeholder { /* Firefox 18- */
+    color: $headerBarFont-color;  
+}
+
+.searchBox::-moz-placeholder {  /* Firefox 19+ */
+    color: $headerBarFont-color; 
+}
+
+.searchBox:-ms-input-placeholder {  
+    color: $headerBarFont-color; 
+}
+
+.pac-container {
+    background-color: $sideBar-color! important;
+}
+.pac-item:hover{background-color: $sideBarFont-color! important;}
+
+.radiusRange{
+    width: 80%;
+    height: 25px;
+    
+}
+
+.fadeOut{
+    transition: opacity 0.2s ease-in-out;
+    opacity: 0;
+}
+
+.hidden{
+    display: none;
+}
+
+.applyButton{
+    clear:both;
+    text-align: center;
+    padding-top: 15px;
+    margin-bottom: 30px;
+    @media(min-width: $breakpoint-mobile){
+        margin-bottom: 0;
+    }
+    span{
+        background-color: $sideBarFont-color;
+        color: white;
+        border-radius: 20px;
+        padding: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+        &:hover{
+            background-color: darken($sideBarFont-color,2.5);
+            cursor: pointer;
+        }
+    }
+}
+
+#eventPageMain{
+    height: 100%;
+    width: 100%;
+    .contentContainer{
+        .sideBar{
+            #searchPlaceDiv{
+                text-align: center;
+                .icon-location{
+                    color: $sideBarFont-color;
+                    margin-right: 3%;
+                }
+            }
+            #dateDiv{
+                color: $headerBarFont-color;
+                font-weight: bold;
+                text-align: center;
+                table{
+                    margin-left: auto;
+                    margin-right: auto;
+                    tr{
+                        td{
+                            padding: 5px;
+                        }
+                    }
+                }
+            }
+        }
+        .mainContentContainer{
+            
+            .mainContent{
+                h3{
+                    color: #AEB3B7;
+                    font-weight: bold;
+                }
+                text-align: center;
+                #eventResultH3, #recommendationHeader {
+                    margin-top: 5%;
+                    margin-left: 3%;
+                    margin-bottom: 0;
+                    text-align: left;
+                }
+                .showMoreText {
+                    margin: 24px auto;
+                    width: 15%;
+                    color: #ccc;
+                } 
+            }
+        }
+    }
+}
+
+.scrollHorizontal{
+    white-space: nowrap;
+    overflow: auto;
+    &.margintop{
+        margin-top: 5%;
+    }
+}
+.eventItem{
+    display: inline-block;
+    width:$eventItem-width;
+    vertical-align: middle;
+    margin: 2%;
+    height: $eventItem-height;
+    border-radius: 3px;
+    text-align: center;
+    white-space: initial;
+    background-color: white;
+    -webkit-box-shadow: 0px 5px 55px -24px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 55px -24px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 55px -24px rgba(0,0,0,0.75);
+    position: relative;
+    &.noleft{
+        margin-left: 0;
+    }
+    &.small{
+        width: $eventItem-width-small;
+        height: $eventItem-height-small;
+    }
+    .eventImage{
+        height: 60%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transition: box-shadow 0.3s ease-out;                            
+        -webkit-box-shadow: inset 0px 0px 5px 200px rgba(41,57,73,0);
+        -moz-box-shadow: inset 0px 0px 5px 200px rgba(41,57,73,0);
+        box-shadow: inset 0px 0px 5px 200px rgba(41,57,73,0);
+        overflow:hidden;
+        position: relative;
+        &:hover{
+            transition: box-shadow 0.3s ease-out;
+            -webkit-box-shadow: inset 0px 0px 5px 200px rgba(41,57,73,0.75);
+            -moz-box-shadow: inset 0px 0px 5px 200px rgba(41,57,73,0.75);
+            box-shadow: inset 0px 0px 5px 200px rgba(41,57,73,0.75);
+            cursor: pointer;
+            .descContainer{
+                opacity: 1;
+            }
+        }
+        .descContainer{
+            width: 100%;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+            color: white;
+            transition: opacity 0.3s ease-out;
+            font-weight: bold;
+            opacity: 0;
+        }
+    }
+    .green{
+        color: green;
+        font-weight: bold;
+    }
+    .red{
+        color: red;
+        font-weight: bold;
+    }
+    .textContainer{
+        margin: 1%;
+        margin-top: 5%;
+        h1{
+            font-size: 18px;
+            color:#3B4C5F;
+        }
+    }
+    .icon-heart{
+        position: absolute;
+        left: 15px;
+        bottom: 15px;
+        color: $sideBar-color;
+        transition: color 0.2s;
+        &:hover{
+            transition: color 0.2s;
+            color: red;
+            cursor: pointer;
+        }
+        &.favored{
+            color: red;
+        }
+    }
+    .icon-clock{
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
+        color: $sideBar-color;
+        transition: color 0.2s;
+        &:hover{
+            transition: color 0.2s;
+            color: $sideBarFont-color;
+            cursor: pointer;
+        }
+    }
+    .deleteGameBtn {
+        display: block;
+        position: absolute;
+        z-index: 3;
+        top: 5px;
+        right: 5px;
+        font-weight: bold;
+        font-size: 12px;
+        &:hover {
+            color: grey;
+            cursor: pointer;
+        }
+        &.hidden {
+            display: none;
+        }
+    }
+    &.hidden {
+        display: none;
+    }
+}

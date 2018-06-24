@@ -1,0 +1,68 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?y255k4');
+  src:  url('../fonts/icomoon.eot?y255k4#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?y255k4') format('truetype'),
+    url('../fonts/icomoon.woff?y255k4') format('woff'),
+    url('../fonts/icomoon.svg?y255k4#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook-square:before {
+  content: "\e900";
+}
+
+.icon-search:before{
+  content: "\e905";
+}
+
+.icon-location:before{
+  content: "\e948";
+}
+
+.icon-star:before{
+  content: "\e9d9";
+}
+
+.icon-clock:before{
+  content: "\e94e";
+}
+
+.icon-back:before{
+  content: "\ea44";
+}
+
+.icon-menu:before{
+  content: "\e9bd";
+}
+
+.icon-heart:before{
+  content: "\e907";
+}
+
+.icon-logo:before{
+  content: "\e906";
+}
+.icon-wrench:before{
+ content:"\e994";
+ position: absolute;
+ right: 15px;
+ bottom: 15px;
+}

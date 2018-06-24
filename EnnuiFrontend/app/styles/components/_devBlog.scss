@@ -1,0 +1,142 @@
+#devblogHeader{
+    background-color: $sideBar-color;
+    a{
+        display: inline-block;
+        font-size: 26px;
+        color: white;
+        padding: 2%;
+        text-decoration: none;
+        &:hover{
+            color: $sideBarFont-color;
+            cursor: pointer;
+        }
+    }
+    h1{
+        color: white;
+        padding: 2%; 
+        display:inline-block;
+    }
+}
+
+#devblogBody{
+    .changeBlock{
+        padding: 5%;
+        border-bottom: 1px solid black;
+        .version{
+            color: $sideBarFont-color;
+        }
+        .releaseDate{
+            padding-left: 1%;
+            color: $sideBar-color;
+        }
+        .changes{
+            margin-top: 20px;
+            padding-left: 4%;
+        }
+    }
+}
+#landingFooterDev{
+    background-color: $footer-color;
+    table{
+        width: 100%;
+        tr{
+            text-align: center;
+            .header{
+                color: $acent-color;
+                padding-top: 2%;
+            }
+            td{
+                padding-bottom: 5px;
+                width: 33%;
+                .dialog{
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+                a{
+                    color: white;
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    #textDiv{
+        color: #333;
+        text-decoration: none;
+        display: none;
+        position: fixed;
+        background: white;
+        top: 10%;
+        bottom: 10%;
+        width: 100%;
+        padding: 25px;
+        border: 1px solid lightgrey;
+        border-radius: 5px;
+        overflow-y: auto;
+        -webkit-box-shadow: -16px 10px 88px -15px rgba(0,0,0,0.57);
+        -moz-box-shadow: -16px 10px 88px -15px rgba(0,0,0,0.57);
+        box-shadow: -16px 10px 88px -15px rgba(0,0,0,0.57);
+        -webkit-animation:pop-in 0.2s ease-out;
+        -moz-animation:pop-in 0.2s ease-out;
+        -ms-animation:pop-in 0.2s ease-out;
+        left: 0;
+
+        @media(min-width: $breakpoint-mobile){
+            width: 75%;
+            left: 12.5%;
+            right: 12.5%;
+        }
+        #close {
+            background: white;
+            position: -webkit-sticky; 
+            position: sticky;
+            font-size: 20px;
+            margin-right: 40px;
+            @media(min-width: $breakpoint-mobile){
+                margin: 15px;
+            }
+            float:right;
+            padding:2px 5px;
+            top: 5px;
+            &:hover{
+                color: lightgrey;
+                cursor: pointer;
+            }
+        }
+    }
+    #languageBox{
+        margin-top: 2%;
+        background-color: darken($footer-color,5.3);
+        width: 100%;
+        text-align: center;
+        height:80px;
+        span{
+            color: lightgrey;
+            padding-left: 2%;
+            padding-right: 2%;
+            line-height: 80px;
+            &:hover{
+                color: grey;
+                cursor: pointer;
+            }
+        }
+    }
+
+    @-webkit-keyframes pop-in {
+    0% { opacity: 0; -webkit-transform: scale(0.5); }
+    100% { opacity: 1; -webkit-transform: scale(1); }
+    }
+    @-moz-keyframes pop-in {
+    0% { opacity: 0; -moz-transform: scale(0.5); }
+    100% { opacity: 1; -moz-transform: scale(1); }
+    }
+    @keyframes pop-in {
+    0% { opacity: 0; transform: scale(0.5); }
+    100% { opacity: 1; transform: scale(1); }
+
+
+}
+}

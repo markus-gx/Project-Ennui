@@ -1,0 +1,133 @@
+.leisureItemPageContainer {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "_header" "_openHours" "_reviews";
+    @media (min-width: $breakpoint-mobile) { 
+        grid-template-rows: 1fr 1.8fr;
+        grid-template-columns:5fr 7fr;
+        grid-template-areas: "_header _header" "_openHours _reviews";
+    }
+    &.fadeOutt{
+        animation: fadeOutT 0.2s ease-in-out forwards;
+    }
+    .detailsHeader {
+        grid-area: _header;
+        border-bottom: 1px solid #333;
+        position: relative;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+        text-align: center;
+        .icon-back {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 24px;
+            z-index: 3;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        .detailsHeaderContent {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            .detailsName{
+                font-size: 30px;
+                font-weight: bold;
+                font-style: italic;
+            }
+            .detailsOpenStatus {
+                &.closed {
+                    color: red;
+                }
+                &.open {
+                    color: green;
+                }
+            }
+            .detailsRating {
+                transform: scaleX(0.4);
+                div{
+                    transform: scaleX(2.5);
+                }
+            }
+        }
+    }
+    .detailsOpenHours {
+        grid-area: _openHours;
+        border: 1px solid #ededed;
+        margin: 8px;
+        z-index: 2;
+        
+        .openHourTag {
+            height: calc(100%/7 - 1px);
+            border-bottom: 1px solid #ededed;
+            position: relative;
+            font-family: Lato;
+            &:nth-child(2) {
+                background: lightgoldenrodyellow;
+            }
+            &.closed {
+                color: red;
+            }
+            div {
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                &.tagDay {
+                    left: 8px;
+                    font-size: 18px;
+                    letter-spacing: .1em;
+                    font-weight: bolder;
+                }
+                &.tagHours {
+                    float: right;
+                    font-size: 16px;
+                    right: 8px;
+                }
+            }
+            
+        }
+
+    }
+    .detailsReviews {
+        grid-area: _reviews;
+        border: 1px solid #ededed;
+        margin: 8px;
+        z-index: 2;
+        overflow-y: auto;
+
+        .reviewItem {
+            border-bottom: 1px solid #ededed;
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            grid-template-rows: 1fr 30px;
+            grid-template-areas: "img text text" "rating text text";
+
+            .reviewImg {
+                grid-area: img;
+                width: calc(100% - 16px);
+                padding: 8px;
+            }
+
+            .reviewRating {
+                grid-area: rating;
+            }
+
+            .reviewText {
+                grid-area: text;
+                margin:12px;
+
+            }
+            
+        }
+    }
+
+    .starContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        padding: 0 8px;
+    }
+}

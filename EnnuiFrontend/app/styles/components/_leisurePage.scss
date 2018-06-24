@@ -1,0 +1,89 @@
+#leisurePageMain{
+    height: 100%;
+    width: 100%;
+}
+
+#leisurePageContent{
+    position: relative;
+    text-align: center;
+    #offerBackButton{
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        font-size: 26px;
+        &:hover{
+            color: $sideBarFont-color;
+            cursor: pointer;
+        }
+    }
+    #offers{
+        .offerItem{
+            display: inline-block;
+            width:$offerItem-width;
+            vertical-align: middle;
+            margin: 2%;
+            height: $offerItem-height;
+            border-radius: 3px;
+            text-align: center;
+            background-color: white;
+            -webkit-box-shadow: 0px 5px 55px -24px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 5px 55px -24px rgba(0,0,0,0.75);
+            box-shadow: 0px 5px 55px -24px rgba(0,0,0,0.75);
+            user-select: none;
+            h2{
+                margin-top: 3.5%;       
+            }
+            p{
+                &.red{
+                    color: red;
+                }
+                &.green{
+                    color: green;
+                }
+            }
+            &:hover{
+                cursor: pointer;
+                transition: background-color 0.2s;
+                background-color: darken(white,3);
+            }
+        }
+    }
+    #offerSelection{
+        position: absolute;
+        left: 50%;
+        top: 10%;
+        @media(min-width: $breakpoint-mobile){
+            top: 30%;
+        }
+        transform: translateX(-50%);
+        color: $sideBar-color;
+        width: 100%;
+        h1{
+            text-align: center;
+            margin-bottom: 5%;
+        }
+        p{
+            color: red;
+        }
+        #actItems{
+            .activity{
+                display: inline-block;
+                background-color: $sideBar-color;
+                color: white;
+                margin: 5%;
+                padding: 3%;
+                @media(min-width: $breakpoint-mobile){
+                    margin: 1%;
+                    padding: 1%;
+                }
+                &:hover{
+                    cursor: pointer;
+                    background-color: $sideBarFont-color;
+                }
+                &.selected{
+                    background-color: $sideBarFont-color;
+                }
+            }
+        }
+    }
+}
