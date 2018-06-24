@@ -1,0 +1,85 @@
+/*
+ Localizable.strings
+ Ennui
+ 
+ Created by Markus Geilehner on 07.09.17.
+ Copyright © 2017 Markus G. All rights reserved.
+ */
+
+"Enter a specific place" = "Geben Sie eine Adresse an";
+"Clear Filter" = "Filter löschen";
+"Something went wrong!" = "Hoppala... etwas ist falsch gelaufen!";
+"Players" = "Spieler";
+"Game has been added to 'Favored Games'" = "Spiel wurde zu Lieblingsspielen hinzugefügt!";
+"Favored!" = "Favorisiert!";
+"Website (click)" = "Website (klick)";
+"No Website" = "Keine Website verfügbar";
+"Cancel" = "Abbrechen";
+"Failed to find your location!" = "Wir konnte Ihre Position nicht finden!";
+"Event has been added to 'Favored Events'" = "Event wurde zu Lieblinsevents hinzugefügt!";
+"Not logged in!" = "Nicht eingeloggt!";
+"Event-Name is required!" = "Event-Name muss ausgefüllt sein!";
+"Event-Hoster is required" = "Veranstalter muss ausgefüllt sein!";
+"Event-Description is required!" = "Event-Beschreibung muss ausgefüllt sein!";
+"You have to select categories!" = "Sie müssen Kategorien wählen!";
+"Event-Starttime is required!" = "Legen Sie eine Startzeit fest!";
+"Event-Endtime is required!" = "Legen Sie eine Endzeit fest!";
+"COUNTRY_LOCATION_ERROR" = "Wir konnten durch Ihre Eingabe kein Land ermitteln!";
+"CITY_LOCATION_ERROR" = "Wir konnten durch Ihre Eingabe keine Stadt ermitteln!";
+"ZIP_LOCATION_ERROR" = "Wir konnten durch Ihre Eingabe keine Posleitzahl ermitteln!";
+"LONGLAT_LOCATION_ERROR" = "Wir konnte Ihre Position nicht feststellen!";
+"NO_START_DATE_ERROR" = "Keine Startzeit angegeben!";
+"NO_END_DATE_ERROR" = "Keine Endzeit angegeben!";
+"END_DATE_EARLIER_THAN_START_DATE" = "Die Endzeit kann nicht früher als die Startzeit sein!";
+"EVENT_APPROVEMENT" = "Ihre Veranstaltung wird in kürze kontrolliert und freigegeben!";
+"EVENT_ADDED" = "Event hinzufgefügt!";
+"Done" = "Fertig";
+"LOADING" = "Lade...";
+"All" = "Alle";
+"LOGIN_FOR_FEATURE" = "Sie müssen sich einloggen um dieses Feature verwenden zu können!";
+"IS_STARTING" = "startet in ZWEI Stunden!";
+"DRINKING_GAMES" = "Trinkspiel";
+"CARD_GAMES" = "Kartenspiel";
+"DICE_GAMES" = "Würfelspiel";
+"BOARD_GAMES" = "Brettspiel";
+"OUTDOOR_GAMES" = "Outdoorspiel";
+"BALL_GAMES" = "Ballspiel";
+"PARTY" = "Party & Nightlife";
+"MUSIC" = "Musik";
+"ART" = "Kunst";
+"LITERATUR" = "Literatur";
+"COMEDY" = "Comedy";
+"FOOD" = "Essen";
+"GAMES" = "Spiele";
+"HEALTH" = "Gesundheit";
+"SHOPPING" = "Shopping";
+"HOME_GARDEN" = "Haus & Garten";
+"SPORT" = "Sport";
+"THEATRE" = "Theater";
+"OTHERS" = "Sonstiges";
+"CLIMBING" = "Klettern";
+"BOWLING" = "Bowlen";
+"CINEMA" = "Kino";
+"CART" = "Kart";
+"BILLIARD" = "Billiard";
+"LASERTAG" = "Lasertag";
+"SEGWAY" = "Segway";
+"MUSEUM" = "Museum";
+"PAINTBALL" = "Paintball";
+"TRAMPOLIN" = "Trampolin springen";
+"CASINO" = "Casino";
+"OPEN_AIR_POOL" = "Freibad";
+"INDOOR_POOL" = "Hallenbad";
+"THERMAL_BATH" = "Therme";
+"HIGH_ROPE_COURSE" = "Hochseilgarten";
+"ICE_SKATE" = "Eislaufen";
+"ESCAPE_THE_ROOM" = "Escape The Room";
+"SKIING" = "Ski fahren";
+"WATER_SKIING" = "Wasser-Ski";
+"SWIMMING" = "Schwimmen";
+"OFFER_CLOSED" = "Geschlossen!";
+"OFFER_OPEN" = "Geöffnet!";
+"ANONYMOUS" = "Anonym";
+"REVIEWS" = "Rezensionen";
+"READ_MORE" = "mehr...";
+"READ_LESS" = "weniger...";

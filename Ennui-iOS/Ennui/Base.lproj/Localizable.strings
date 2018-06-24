@@ -1,0 +1,85 @@
+/* 
+  Localizable.strings
+  Ennui
+
+  Created by Markus Geilehner on 07.09.17.
+  Copyright © 2017 Markus G. All rights reserved.
+*/
+
+"Enter a specific place" = "Enter a specific place";
+"Clear Filter" = "Clear Filter";
+"Something went wrong!" = "Something went wrong!";
+"Players" = "Players";
+"Game has been added to 'Favored Games'" = "Game has been added to 'Favored Games'";
+"Favored!" = "Favored!";
+"Website (click)" = "Website (click)";
+"No Website" = "No Website";
+"Cancel" = "Cancel";
+"Failed to find your location!" = "Failed to find your location!";
+"Event has been added to 'Favored Events'" = "Event has been added to 'Favored Events'";
+"Not logged in!" = "Not logged in!";
+"Event-Name is required!" = "Event-Name is required!";
+"Event-Hoster is required" = "Event-Hoster is required";
+"Event-Description is required!" = "Event-Description is required!";
+"You have to select categories!" = "You have to select categories!";
+"Event-Starttime is required!" = "Event-Starttime is required!";
+"Event-Endtime is required!" = "Event-Endtime is required!";
+"COUNTRY_LOCATION_ERROR" = "We've not been able to locate the country from the place you entered!";
+"CITY_LOCATION_ERROR" = "We've not been able to locate the city from the place you entered!";
+"ZIP_LOCATION_ERROR" = "We've not been able to locate the zip from the place you entered!";
+"LONGLAT_LOCATION_ERROR" = "There was an error locating your place!";
+"NO_START_DATE_ERROR" = "No start date entered!";
+"NO_END_DATE_ERROR" = "No end date entered!";
+"END_DATE_EARLIER_THAN_START_DATE" = "End date must be later than start date!";
+"EVENT_APPROVEMENT" = "Event is now waiting for approvement!";
+"EVENT_ADDED" = "Event added!";
+"Done" = "Done";
+"LOADING" = "Loading...";
+"All" = "All";
+"LOGIN_FOR_FEATURE" = "Login to use this feature!";
+"IS_STARTING" = "is starting in TWO hours!";
+"DRINKING_GAMES" = "Drinking Game";
+"CARD_GAMES" = "Card Game";
+"DICE_GAMES" = "Dice Game";
+"BOARD_GAMES" = "Board Game";
+"OUTDOOR_GAMES" = "Outdoor Game";
+"BALL_GAMES" = "Ball Game";
+"PARTY" = "Party & Nightlife";
+"MUSIC" = "Music";
+"ART" = "Art";
+"LITERATUR" = "Literatur";
+"COMEDY" = "Comedy";
+"FOOD" = "Food";
+"GAMES" = "Games";
+"HEALTH" = "Health";
+"SHOPPING" = "Shopping";
+"HOME_GARDEN" = "Home & Garden";
+"SPORT" = "Sport";
+"THEATRE" = "Theatre";
+"OTHERS" = "Others";
+"CLIMBING" = "Climbing";
+"BOWLING" = "Bowling";
+"CINEMA" = "Cinema";
+"CART" = "Cart";
+"BILLIARD" = "Billiard";
+"LASERTAG" = "Lasertag";
+"SEGWAY" = "Segway";
+"MUSEUM" = "Museum";
+"PAINTBALL" = "Paintball";
+"TRAMPOLIN" = "Trampolin";
+"CASINO" = "Casino";
+"OPEN_AIR_POOL" = "Openair-Pool";
+"INDOOR_POOL" = "Indoor-Pool";
+"THERMAL_BATH" = "Thermal-Bath";
+"HIGH_ROPE_COURSE" = "Highrope-Course";
+"ICE_SKATE" = "Ice skateing";
+"ESCAPE_THE_ROOM" = "Escape The Room";
+"SKIING" = "Skiing";
+"WATER_SKIING" = "Water Skiing";
+"SWIMMING" = "Swimming";
+"OFFER_CLOSED" = "Closed!";
+"OFFER_OPEN" = "OPEN!";
+"ANONYMOUS" = "Anonymous";
+"REVIEWS" = "Reviews";
+"READ_MORE" = "Read more";
+"READ_LESS" = "Read less";

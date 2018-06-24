@@ -1,0 +1,201 @@
+
+/* Class = "UILabel"; text = "Favourite Games"; ObjectID = "1GB-iJ-APO"; */
+"1GB-iJ-APO.text" = "Lieblinsspiele";
+
+/* Class = "UILabel"; text = "From 12.08.13 20:00 till 13.08.13 03:00"; ObjectID = "3a6-Go-kbu"; */
+"3a6-Go-kbu.text" = "From 12.08.13 20:00 till 13.08.13 03:00";
+
+/* Class = "UILabel"; text = "Location"; ObjectID = "3vZ-8h-2IM"; */
+"3vZ-8h-2IM.text" = "Standort";
+
+/* Class = "UIButton"; normalTitle = "Website"; ObjectID = "42P-E6-Xqg"; */
+"42P-E6-Xqg.normalTitle" = "Website";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "551-wH-gQS"; */
+"551-wH-gQS.text" = "Label";
+
+/* Class = "UILabel"; text = "Street:"; ObjectID = "6z5-q7-hsk"; */
+"6z5-q7-hsk.text" = "Straße:";
+
+/* Class = "UITextField"; placeholder = "Event Name"; ObjectID = "6zs-H3-562"; */
+"6zs-H3-562.placeholder" = "Eventname";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "8qn-dV-0X4"; */
+"8qn-dV-0X4.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "9Ac-Ec-eMs"; */
+"9Ac-Ec-eMs.text" = "Label";
+
+/* Class = "UITableViewSection"; headerTitle = "Localication"; ObjectID = "AIX-4Z-B97"; */
+"AIX-4Z-B97.headerTitle" = "Lokalisierung";
+
+/* Class = "UITextField"; placeholder = "Select categories"; ObjectID = "Bkh-34-138"; */
+"Bkh-34-138.placeholder" = "Wähle Kategorien";
+
+/* Class = "UIButton"; normalTitle = "Add Event"; ObjectID = "CI2-5o-IY4"; */
+"CI2-5o-IY4.normalTitle" = "Event hinzufügen";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ETN-HQ-320"; */
+"ETN-HQ-320.text" = "Label";
+
+/* Class = "UILabel"; text = "Event Name"; ObjectID = "EVt-tF-AwQ"; */
+"EVt-tF-AwQ.text" = "Eventname";
+
+/* Class = "UILabel"; text = "Some Test game"; ObjectID = "EY8-Jx-tqq"; */
+"EY8-Jx-tqq.text" = "Some Test game";
+
+/* Class = "UILabel"; text = "Trinkspiel, Kartenspiel, someother spiel"; ObjectID = "HlK-qh-Du9"; */
+"HlK-qh-Du9.text" = "Trinkspiel, Kartenspiel, someother spiel";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "HvG-Y8-nWk"; */
+"HvG-Y8-nWk.text" = "Label";
+
+/* Class = "UILabel"; text = "City: "; ObjectID = "I4h-ue-Isv"; */
+"I4h-ue-Isv.text" = "Stadt: ";
+
+/* Class = "UINavigationItem"; title = "Offer's"; ObjectID = "I5U-El-bwQ"; */
+"I5U-El-bwQ.title" = "Angebote";
+
+/* Class = "UITabBarItem"; title = "User"; ObjectID = "IC4-nb-UUK"; */
+"IC4-nb-UUK.title" = "Benutzer";
+
+/* Class = "UILabel"; text = "Some very big long name for"; ObjectID = "KLV-YY-0eU"; */
+"KLV-YY-0eU.text" = "Some very big long name for";
+
+/* Class = "UITextField"; placeholder = "Event-Website"; ObjectID = "KU4-UO-duf"; */
+"KU4-UO-duf.placeholder" = "Event-Website";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "LH7-Ri-0L4"; */
+"LH7-Ri-0L4.text" = "Label";
+
+/* Class = "UILabel"; text = "Starttime: "; ObjectID = "MJI-wm-egv"; */
+"MJI-wm-egv.text" = "Startzeit: ";
+
+/* Class = "UITextField"; placeholder = "Event Start"; ObjectID = "MUd-5z-h4r"; */
+"MUd-5z-h4r.placeholder" = "Event Start";
+
+/* Class = "UILabel"; text = "(4/5)"; ObjectID = "MdO-O4-cWm"; */
+"MdO-O4-cWm.text" = "(4/5)";
+
+/* Class = "UILabel"; text = "Country"; ObjectID = "N4V-z6-IbT"; */
+"N4V-z6-IbT.text" = "Land";
+
+/* Class = "UITableViewSection"; headerTitle = "Timespan"; ObjectID = "OUP-Tl-90l"; */
+"OUP-Tl-90l.headerTitle" = "Zeitspanne";
+
+/* Class = "UITextView"; text = "Enter some description"; ObjectID = "S5f-W3-Qvn"; */
+"S5f-W3-Qvn.text" = "Geben Sie eine Beschreibung an";
+
+/* Class = "UITextField"; text = "All"; ObjectID = "TGI-BI-ADV"; */
+"TGI-BI-ADV.text" = "Alle";
+
+/* Class = "UILabel"; text = "Some Test Game NAme"; ObjectID = "TKB-Wf-GrF"; */
+"TKB-Wf-GrF.text" = "Some Test Game NAme";
+
+/* Class = "UINavigationItem"; title = "Events"; ObjectID = "Td9-Wp-icV"; */
+"Td9-Wp-icV.title" = "Veranstaltungen";
+
+/* Class = "UITextField"; placeholder = "Event-Hoster"; ObjectID = "TdT-KH-ST6"; */
+"TdT-KH-ST6.placeholder" = "Veranstalter";
+
+/* Class = "UILabel"; text = "Favourite Events"; ObjectID = "Vij-SZ-inJ"; */
+"Vij-SZ-inJ.text" = "Lieblingsevents";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Vrx-zs-YZK"; */
+"Vrx-zs-YZK.text" = "Label";
+
+/* Class = "UILabel"; text = "Show Categories: "; ObjectID = "Xac-wf-qUJ"; */
+"Xac-wf-qUJ.text" = "Kategorien: ";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Y1O-nV-h20"; */
+"Y1O-nV-h20.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Open in Maps"; ObjectID = "aPa-fs-OiO"; */
+"aPa-fs-OiO.normalTitle" = "In Maps öffnen";
+
+/* Class = "UISegmentedControl"; bJT-Da-MK7.segmentTitles[0] = "Description"; ObjectID = "bJT-Da-MK7"; */
+"bJT-Da-MK7.segmentTitles[0]" = "Beschreibung";
+
+/* Class = "UISegmentedControl"; bJT-Da-MK7.segmentTitles[1] = "Instruction"; ObjectID = "bJT-Da-MK7"; */
+"bJT-Da-MK7.segmentTitles[1]" = "Anleitung";
+
+/* Class = "UINavigationItem"; title = "Add-Event"; ObjectID = "d1R-Az-pQi"; */
+"d1R-Az-pQi.title" = "Event hinzufügen";
+
+/* Class = "UILabel"; text = "ZIP:"; ObjectID = "eSO-61-Ajv"; */
+"eSO-61-Ajv.text" = "PLZ:";
+
+/* Class = "UILabel"; text = "(200km)"; ObjectID = "eqh-dK-oHk"; */
+"eqh-dK-oHk.text" = "(200km)";
+
+/* Class = "UITabBarItem"; title = "Offers"; ObjectID = "fgw-eC-tar"; */
+"fgw-eC-tar.title" = "Angebote";
+
+/* Class = "UILabel"; text = "Some Location Name"; ObjectID = "gAz-mp-Lda"; */
+"gAz-mp-Lda.text" = "Some Location Name";
+
+/* Class = "UITabBarItem"; title = "Games"; ObjectID = "hml-sy-5De"; */
+"hml-sy-5De.title" = "Spiele";
+
+/* Class = "UIButton"; normalTitle = "Continue without Facebook"; ObjectID = "hqy-dJ-AYM"; */
+"hqy-dJ-AYM.normalTitle" = "Ohne Facebook fortfahren";
+
+/* Class = "UITableViewSection"; headerTitle = "Categories"; ObjectID = "i6l-Ga-9vm"; */
+"i6l-Ga-9vm.headerTitle" = "Kategorien";
+
+/* Class = "UITableViewSection"; headerTitle = "Logged in as"; ObjectID = "j4y-pu-ayn"; */
+"j4y-pu-ayn.headerTitle" = "Eingeloggt als";
+
+/* Class = "UILabel"; text = "Login with Facebook\nto"; ObjectID = "jRL-lY-6Wd"; */
+"jRL-lY-6Wd.text" = "Mit Facebook einloggen\num";
+
+/* Class = "UINavigationItem"; title = "Games"; ObjectID = "jaz-qY-EvS"; */
+"jaz-qY-EvS.title" = "Spiele";
+
+/* Class = "UILabel"; text = "Endtime: "; ObjectID = "kGQ-HC-GCP"; */
+"kGQ-HC-GCP.text" = "Ende: ";
+
+/* Class = "UIBarButtonItem"; title = "Preview"; ObjectID = "lkC-pg-t9u"; */
+"lkC-pg-t9u.title" = "Vorschau";
+
+/* Class = "UITabBarItem"; title = "Events"; ObjectID = "o0a-z2-qMr"; */
+"o0a-z2-qMr.title" = "Events";
+
+/* Class = "UIBarButtonItem"; title = "Filter"; ObjectID = "pRs-o2-nEF"; */
+"pRs-o2-nEF.title" = "Filter";
+
+/* Class = "UITextField"; placeholder = "Paste an image url"; ObjectID = "q4R-v2-h03"; */
+"q4R-v2-h03.placeholder" = "Image-URL einfügen";
+
+/* Class = "UILabel"; text = "Nearby available taxis"; ObjectID = "qG1-nn-cm8"; */
+"qG1-nn-cm8.text" = "Vefügbare Taxis in Ihrer nähe";
+
+/* Class = "UITableViewSection"; headerTitle = "Favourites"; ObjectID = "rHa-ba-Pgw"; */
+"rHa-ba-Pgw.headerTitle" = "Favoriten";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "sP8-Gl-OCc"; */
+"sP8-Gl-OCc.text" = "Label";
+
+/* Class = "UILabel"; text = "...apply more filters!\n...favorize events or games you like!\n...get access to intelligent Ennui-Services\n...get personal recommendations based\non things you like!"; ObjectID = "sUA-8e-Pgr"; */
+"sUA-8e-Pgr.text" = "...mehr Filter zu verwenden\n...Spiele und Events zu favorisieren!\n...Zugriff auf intelligente Systeme zu erhalten\n...Vorschläge basierend auf Dinge die Sie mögen zu bekommen!";
+
+/* Class = "UILabel"; text = "2 - 99 Spieler"; ObjectID = "sg2-Hy-KAS"; */
+"sg2-Hy-KAS.text" = "2 - 99 Spieler";
+
+/* Class = "UINavigationItem"; title = "Ennui"; ObjectID = "tN7-ok-LjH"; */
+"tN7-ok-LjH.title" = "Ennui";
+
+/* Class = "UILabel"; text = "Party-Nightlife"; ObjectID = "wCp-7k-Kvp"; */
+"wCp-7k-Kvp.text" = "Party-Nightlife";
+
+/* Class = "UITextField"; placeholder = "Event End"; ObjectID = "wlh-Na-PfU"; */
+"wlh-Na-PfU.placeholder" = "Ende";
+
+/* Class = "UILabel"; text = "Name:"; ObjectID = "x0v-xE-CL6"; */
+"x0v-xE-CL6.text" = "Name:";
+
+/* Class = "UILabel"; text = "Search Radius"; ObjectID = "xXY-2t-diH"; */
+"xXY-2t-diH.text" = "Suchradius";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "ygh-5n-rZC"; */
+"ygh-5n-rZC.text" = "Titel";
